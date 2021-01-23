@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:remove="all">Cadastro de usuário</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <style>
+            body{ font-family: Arial, Helvetica, sans-serif; }
+            
+            .barra{ background-color: #cf4647; margin: 0 auto; width: 600px; height: 10px; }
+            
+            .container{ margin: 0px auto; width: 600px; background-color: #f8f6f6;  }
+
+            .container div{ padding: 30px 30px 30px; }
+
+            h1{ text-align: center; margin-bottom: 50px; }
+            
+            .center{ text-align: center; margin: 50px; }
+            
+            .bottonAtivar{ background-color: #4f9da6; border: 0px solid #2a363b; color: #f8f6f6; cursor: pointer; 
+                           border-radius: 6px; padding: 15px 50px; font-size: 22px; }
+            .bottonAtivar:hover{ background-color: #2a363b; }
+        </style>
+        
+    </head>
+    <body>
+        <div class="barra"></div>
+        <div class="container">
+            <div>
+                <h1>
+                    Bem Vindo a plataforma Desafia-me!
+                </h1>
+                <p>
+                    Olá <span th:text="${usuario.nome}"></span>.
+                    <br/><br/>
+                    Está tudo pronto para você acessar a nossa plataforma.
+                    <br/><br/>
+                    Para começar é muito simples. Clique no botão abaixo para confirmar seu login, senha e acessar a plataforma.
+                </p>
+                <div class="center">
+                    <a class="bottonAtivar">Acessar Conta</a>
+                </div>
+                <hr/>
+                <p>
+                    Enviado por: <a href="">Desafia-me!</a>
+                    <br/>
+                    Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
